@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $spacing-xsmall;
+
+    .header__img{
+        align-items: center;
+        width: 150px;
+    }
+
+    .nav-item{
+        font-family: $font-principal;
+        font-size: $xsmall;
+    }
+    .nav-link{
+        color: $primary;
+    }
+    
+    .nav-link:hover{
+        color: $tertiary;
+    }
+    
+}
+
