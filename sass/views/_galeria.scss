@@ -1,13 +1,15 @@
 .galeria{
-    position: inherit;
+    width: 95%;
+    margin: auto;
+    padding: 20px 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
-    margin: 10px;
+    grid-gap: 0 13px;
 
-    img{
+    .galeria__img{
         width: 100%;
+        height: auto;
     }
 
     &__grilla:nth-of-type(1){
@@ -51,4 +53,5 @@
     &__grilla:hover{
         opacity: 50%;
     }
+
 }

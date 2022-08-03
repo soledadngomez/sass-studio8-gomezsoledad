@@ -1,16 +1,19 @@
 main{
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 
     .carta__equipo{
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 20px;
+        gap: 10px;
         margin-top: 100px;
         padding-bottom: 100px;
+        box-sizing: border-box;
 
-        img{
+        .carta__equipo__img{
             width: 100%;
+
         }
 
         &__img:nth-of-type(1){
@@ -32,23 +35,20 @@ main{
 
         &__img{
             h3{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(null, center, center);
             align-content: center;
             margin: 20px;
             border: 2px;
             border-style: solid;
             border-color: $primary;
+            font-size: $small;
 
             }
 
             p{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(null, center, center);
             margin-top: 15px;
-
+            
             }
         }
 

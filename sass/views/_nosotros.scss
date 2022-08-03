@@ -1,10 +1,11 @@
 .box__nosotros{
-    height: fit-content;
     width: auto;
+    height: fit-content;
     display: grid;
     grid-template-areas: 
     "info   img"
-    "equipo img"
+    "info   img"
+    "equipo equipo"
     ;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -13,6 +14,7 @@
     .nosotros__info{
         height: auto;
         padding: 20px;
+        margin-left: 10px;
         background-color: $primary;
         grid-column: 1 / 7;
         font-size: $xsmall;
@@ -37,30 +39,29 @@
     }
     
     .video__sobreNosotros{
-        width:470px;
+        width:450px;
         height: 282px;
-        padding: 15px;
     }
 
     .carta__equipo{
-        grid-column: 1 / 7;
+        grid-column: 1 / 13;
         grid-row: 2 / 3;
         width: fit-content;
         height: fit-content;
     
     h3{
-        font-size: $xsmall;
-        justify-content: center;
-        margin: 0;
-        margin-top: 10px;
-        border: 2px;
-        border-style: solid;
-        border-color: $primary;
+        @include flex(null, center, center);
+            align-content: center;
+            margin: 20px;
+            border: 2px;
+            border-style: solid;
+            border-color: $primary;
+            font-size: $small;
     }
 
     p{
-        font-size: $xsmall;
-        justify-content: center;
+        @include flex(null, center, center);
+            margin-top: 15px;
     }
     }
 }

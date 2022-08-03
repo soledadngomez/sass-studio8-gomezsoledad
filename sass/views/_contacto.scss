@@ -6,20 +6,19 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     .boton__contacto{
-        width: 180px;
-        height: 80px;
-        margin: 10px;
+        width: 150px;
+        height: 70px;
+        margin: 10px ;
+        margin-left: 10px;
         margin-bottom: 200px;
+    }
 
-        p{
-            font-size: $large;
-        }
-
-        .animacion__cam{
-            margin: auto;
-            border-radius: 30%;
+    .animacion__cam{
+            font-size:$medium;
+            margin: 40px;
             padding: 0%;
 
             &:hover{
@@ -28,5 +27,5 @@
             }
         }
     }
-}
+
 

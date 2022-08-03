@@ -1,8 +1,7 @@
 header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(null, space-around, center);
     padding: $spacing-xsmall;
+    }
 
     .header__img{
         align-items: center;
@@ -11,15 +10,23 @@ header{
 
     .nav-item{
         font-family: $font-principal;
-        font-size: $xsmall;
+        font-size: map-get($fuentes,text-xsmall);
+
+        .nav-link--active{
+            @extend .nav-item;
+            color:$secundary;
+            @include flex(null, space-around, center);
+            padding: 8px 12px;
+
+        }
+
+        &.nav-link{
+            color: $primary;
+
+            &:hover{
+                color:$secundary;
+            }
+        }
     }
-    .nav-link{
-        color: $primary;
-    }
-    
-    .nav-link:hover{
-        color: $tertiary;
-    }
-    
-}
+
 

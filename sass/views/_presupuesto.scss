@@ -1,6 +1,8 @@
 .letras__presupuesto{
     width:fit-content;
+    height: auto;
     margin:0px;
+    margin-left: 30px;
 
     img{
         width: 180px;
@@ -13,7 +15,6 @@
     background: $primary;
     padding: 30px;
     margin: auto;
-    margin-top: 35px;
     margin-bottom: 25px;
     border-radius: 4px;
     font-family: $font-principal;
@@ -48,7 +49,7 @@
         padding: 10px;
         border-radius: 4px;
         margin-bottom: 16px;
-        border: 1px solid $secundary;
+        border: 1px solid rgb(131, 131, 131);
         font-family: $font-principal;
         font-size: $xsmall;
         color: $primary;
