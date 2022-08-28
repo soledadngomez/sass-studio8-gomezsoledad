@@ -8,10 +8,10 @@ footer{
     .grupo_1{
         width: 100%;
         max-width: 1200px;
-        margin: auto;
+        margin: 10px 15px 10px 15px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
+        grid-gap: 40px;
         padding: $spacing-small 0px;
 
         h2{

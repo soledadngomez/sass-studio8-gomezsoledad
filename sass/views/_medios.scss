@@ -13,32 +13,10 @@
 	}
 
     .box__nosotros{
-        flex-direction: column;
-    }
-
-	.pie-pagina {
-		flex-direction: column;
-	}
-
-	.caja {
-        @include flex(null, flex-end, flex-start);
-		background-size:cover;
-		height: 350px;
-	}
-
-	.pie-pagina .grupo_1 {
-		grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-        margin: 0%;
-	}
-
-    .pie-pagina .grupo_2 {
-        width: 940px;
-    }
-
-    .video__sobreNosotros{
-        width:410px;
-        height: 350px;
+        .video__sobreNosotros{
+            width:410px;
+            height: 350px;
+        }
     }
 
     .galeria{
@@ -94,10 +72,17 @@
     .galeria__grilla:hover{
         opacity: 50%;
     }
+
 }
 
 
 @media screen and (max-width:480px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
     header {
 		flex-direction: column;
 	}
@@ -106,92 +91,141 @@
 		flex-direction: column;
 	}
 
-    .box__nosotros{
-        flex-direction: column;
-    }
+    main{
+        width: 100%;
 
+        .carta__equipo{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            .boton__equipo{
+                width: 30%;
+            }
+
+            &__img{
+                img{
+                    width: 60%;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 90px;
+                }
+                }
+            h3{
+                font-size: $xsmall;
+                width: max-content;
+                padding: 6px;
+                margin-left: 186px;
+            }
+            p{
+                font-size: $xsmall;
+            }
+            }
+        } 
     .footer{
         padding: 10px;
         margin: 10px 10px;
 
+	.caja {
+		justify-content: flex-end;
+		align-items: flex-start;
+		background-size:cover;
+		height: 350px;
+		align-items: flex-end;
+	}
         .pie-pagina {
             flex-direction: column;
         }
-    
+
         .caja {
             @include flex(null, flex-end, flex-start);
             background-size:cover;
             height: 350px;
         }
-    
+
         .pie-pagina .grupo_1 {
             grid-template-columns: repeat(1, 1fr);
             justify-items: center;
             margin: 10px;
         }
-    
+
         .pie-pagina .grupo_2 {
             width: 460px;
         }
 
+	.pie-pagina .grupo_1 {
+		grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin: 0%;
+	}
 
-    }
-	
-    
-    .box__nosotros{
-        height: 1600px;
+    .pie-pagina .grupo_2 {
         width: 460px;
+    }
+}
+
+    .box__nosotros{
+        width: 480px;
+        height: auto;
         margin: 0px;
         padding: 0px;
-        grid-area: auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .sobre__nosotros{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
 
         .nosotros__info{
-            margin-left: 0px;
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-        }
-        
-        .sobre__nosotros{
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-        
-        .video__sobreNosotros{
-            width:450px;
-            height: 350px;
-        }
+            max-width: 90%;
+            margin-left: 0;
+            padding: 20px;
 
-        .carta__equipo{
-            grid-column: 1 / 2;
-            grid-row: 3 / 4;
-            font-size: x-small;
-            @include flex(null, center, center);
-            align-content: center;
-            border: 1px;
-
-            h3{
-                font-size: $small;
+            .video__sobreNosotros{
+                width: 100%;
             }
         }
-    
+
+        
+        .carta__equipo{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            .boton__equipo{
+                width: 30%;
+            }
+
+            &__img{
+                img{
+                    width: 60%;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 80px;
+                }
+                }
+            h3{
+                font-size: $xsmall;
+                width: max-content;
+                padding: 5px;
+                margin-left: 137px;
+            }
+            p{
+                font-size: $xsmall;
+                margin-left: 20px;
+            }
+            }
     }
-
-    .carta__equipo{
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-        margin: 0 0;
-        font-size: x-small;
-        @include flex(null, center, center);
-        align-content: center;
-        border: 1px;
-
-        h3{
-            font-size: $small;
-        }
-    }
-
 
     .galeria{
         grid-template-columns: repeat(1, 1fr);
@@ -247,6 +281,27 @@
             opacity: 50%;
         }
     }
-    
-    
+
+    .form-register {
+        width: 400px;
+        height: 500px;
+        font-size: $xsmall;
+}
+
+#contacto{
+    width: 480px;
+    margin-top: 5px;
+    .boton__contacto{
+        margin-bottom: 10px;
+    }
+    .map{
+        width: 480px;
+        margin-top: 5px;
+    }
+
+    .animacion__cam{
+        margin-top: 20px;
+    }
+}
+
 }
