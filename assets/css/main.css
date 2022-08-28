@@ -491,12 +491,13 @@ main {
     height: 500px;
     font-size: 1em; }
   #contacto {
-    width: 480px;
+    width: 700px;
+    margin-left: 10px;
     margin-top: 5px; }
     #contacto .boton__contacto {
       margin-bottom: 10px; }
     #contacto .map {
-      width: 480px;
+      width: 700px;
       margin-top: 5px; }
     #contacto .animacion__cam {
       margin-top: 20px; } }
@@ -638,12 +639,13 @@ main {
     height: 500px;
     font-size: 1em; }
   #contacto {
-    width: 480px;
-    margin-top: 5px; }
+    width: 470px;
+    margin-top: 5px;
+    margin-left: 5px; }
     #contacto .boton__contacto {
       margin-bottom: 10px; }
     #contacto .map {
-      width: 480px;
+      width: 470px;
       margin-top: 5px; }
     #contacto .animacion__cam {
       margin-top: 20px; } }
